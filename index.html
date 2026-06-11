@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,39 +7,60 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <main>
 
-        <section>
-            <h1>Nível do Herói</h1>
+        <div id="card">
 
-            <form>
-                <div>
-                    <label for="nomeheroi">Nome do HERÓI</label>
-                    <input type="text" id="nomeHeroi" placeholder="Digite o nome do HERÓI">
-                </div>
+            <!-- TELA 01 -->
+            <section id="cadastro">
 
-                <div>
-                    <label for="xpHeroi">XP do HERÓI</label>
-                    <input type="number" id="xpHeroi" placeholder="Digite o XP">
-                </div>
-                <button type="submit">ENVIAR</button>
+                <h1>Nível do Herói</h1>
 
-            </form>
+                <form id="formHeroi">
 
-        </section>
+                    <div>
+                        <label for="nomeHeroi">Nome do HERÓI</label>
+                        <input
+                            type="text"
+                            id="nomeHeroi"
+                            placeholder="Digite o nome do HERÓI"
+                        >
+                    </div>
 
-        <!-- TELA 02 -->
-        <section id="resultado">
-            
-            <h2>resultado</h2>
+                    <div>
+                        <label for="xpHeroi">XP do HERÓI</label>
+                        <input
+                            type="number"
+                            id="xpHeroi"
+                            placeholder="Digite o XP"
+                        >
+                    </div>
 
-            <p id="">Resultado do Herói</p>
+                    <button type="submit">
+                        ENVIAR
+                    </button>
 
-            <button id="novoHeroi"> Pesquisar novo HERÓI</button>
+                </form>
 
+            </section>
 
-        </section>
+            <!-- TELA 02 -->
+            <section id="resultado">
+
+                <h2>Resultado</h2>
+
+                <p id="mensagemHeroi"></p>
+
+                <button id="novoHeroi">
+                    Pesquisar Novo HERÓI
+                </button>
+
+            </section>
+
+        </div>
 
     </main>
+
 </body>
 </html>
